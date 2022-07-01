@@ -28,6 +28,9 @@ caja.className = "hoal";
 
 
 
+
+
+
 //COMO CONSEGUIR ELEMENTO POR SU ETIQUETA
 var totodslosdivs = document.getElementsByTagName("div");
 console.log(totodslosdivs);
@@ -53,4 +56,14 @@ for (var valor in totodslosdivs) {
     
 
 
+
+
+
 //COMO CONSEGUIR ELEMENTO POR SU CLASE
+
+var divsRojos = document.getElementsByClassName("rojo")
+for(var rojo in divsRojos){
+    if(divsRojos[rojo].className == "rojo"){
+    divsRojos[rojo].style.background = "red";
+}
+}
