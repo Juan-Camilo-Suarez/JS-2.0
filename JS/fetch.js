@@ -5,26 +5,71 @@
 
 window.addEventListener('load', function(){
 
-var usuarios =[];
 
 var divuser = document.querySelector("#usuarios");
+var divuser2 = document.querySelector("#usuario");
 
-    fetch('https://reqres.in/api/users?page=2')
+    getUsuarios()
         .then(data => data.json())
-        .then(data =>{
-            usuarios = data.data;
-            console.log(usuarios);
+        .then(user =>{
 
-            usuarios.map((data, i)=>{
+            listadoUsuarios(user.data);
+            //una peticion encadenada
+            
+            return getUsuario()
 
-                let nombre = document.createElement('h2');
+        
+        })
+        .then(data => data.json())
+        .then(user =>{
 
-                nombre.innerHTML = i+ "." + data.first_name
-                
-                divuser.appendChild(nombre);
-                document.querySelector("#loading").style.display = "none";
+            mostarUsuario(user.data);
 
-            });
-        });
+        }); 
+
+function getUsuarios(){
+    return fetch('https://reqres.in/api/users?page=2');
+};
+
+function getUsuario(){
+    return fetch('https://reqres.in/api/users/2');
+
+}
+
+    function mostarUsuario(user){
+
+        console.log(user)
+        
+
+        let nombre = document.createElement('h4');
+        let avatar = document.createElement('img');
+
+        nombre.innerHTML =  user.first_name
+
+        avatar.src = user.avatar;
+        
+        divuser2.appendChild(nombre);
+        divuser2.appendChild(avatar);
+        document.querySelector("#usuario .loading").style.display = "none";
+
+        
+
+
+    };
+
     
+    function listadoUsuarios(usuarios) {
+
+        usuarios.map((data, i)=>{
+
+            let nombre = document.createElement('h2');
+
+            nombre.innerHTML = i+ "." + data.first_name
+            
+            divuser.appendChild(nombre);
+            document.querySelector("#loading").style.display = "none";
+
+        });
+
+    };
 });
