@@ -29,7 +29,9 @@ var divuser2 = document.querySelector("#usuario");
         })
         .then(data =>{
             console.log(data);
-        });
+        })
+        //catch error
+        .catch(error=>console.log(error+ "error em las peticiones"));
 
 function getUsuarios(){
     return fetch('https://reqres.in/api/users?page=2');
