@@ -25,4 +25,11 @@ window.addEventListener('load', function(){
     `;
     console.log(textohora);
 
+    console.log(Math.random());
+
+    //maths with js
+    //https://www.w3schools.com/js/js_math.asp
+
+    
+
 })
