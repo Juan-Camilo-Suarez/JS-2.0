@@ -24,4 +24,31 @@ $(document).ready(function() {
         $(this).addClass('zebra');
     })
 
+
+//SELECTOR BY ETIQUETA
+
+//$ es para cargarel documento y elemntos del don
+
+    var parrafos = $('p').css("cursor", "pointer")
+    
+    parrafos.click(function() {
+        /*
+
+        VARIANTE 1
+
+        if($(this).hasClass('zebra')){
+            $(this).addClass('grande');
+        }
+        */
+        var that = $(this);
+        
+        if(!that.hasClass('grande')){
+            that.addClass('grande');
+        }else{
+            that.removeClass('grande');
+        }
+
+        
+    });
+
  });
