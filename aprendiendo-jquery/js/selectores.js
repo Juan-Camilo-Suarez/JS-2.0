@@ -10,5 +10,18 @@ $(document).ready(function() {
     .css("color", "green"); 
     
     var verder = $("#verde").css("background", "green");
-    
+
+    //SELEctor BY Class
+
+    var mi_clase = $(".zebra").css("padding", "10px");
+
+    console.log(mi_clase);
+
+//agregar la clase zebra a otra clase cuando se haga click
+
+    $('.sin_borde').click(function() {
+        console.log('Click dado');
+        $(this).addClass('zebra');
+    })
+
  });

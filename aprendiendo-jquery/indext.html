@@ -5,6 +5,11 @@
     <title>Aprendiendo Jquery</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript"  src="js/selectores.js"></script>
+    <style>
+      .zebra{
+        border: 5px dashed blue;
+      }
+    </style>
     <!--<script>
       $(document).ready(function(){
         console.log("Loading...");
@@ -13,8 +18,10 @@
   </head>
   <body>
     <h1>aprendiendo jquey</h1>
-    <p id="rojo">ejercicios JQuery</p>
-    <p id="amarillo">parcticando con selectores</p>
-    <p id="verde"> quiero se un parrafo verde</p>
+    <p id="rojo" class="sin_borde">ejercicios JQuery</p>
+    <p id="amarillo" class="zebra">parcticando con selectores</p>
+    <p id="verde" class="sin_borde"> quiero se un parrafo verde</p>
+
+    <p class="zebra">soy un parrafo blanco</p>
   </body>
 </html>
