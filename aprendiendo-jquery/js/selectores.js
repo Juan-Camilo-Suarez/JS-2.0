@@ -51,4 +51,10 @@ $(document).ready(function() {
         
     });
 
+    //LOAD BY ATTRIBUTE
+
+    $('[title = "Google"]').css('background', '#ccc' );
+
+    $('[title = "Facebook"]').css('background', 'blue' );
+
  });
