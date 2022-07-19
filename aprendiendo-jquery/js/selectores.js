@@ -57,4 +57,21 @@ $(document).ready(function() {
 
     $('[title = "Facebook"]').css('background', 'blue' );
 
+
+    //OTRAS FUUNCIONES
+    
+    //find elemntos by tag 
+
+    $('p, a').addClass('margen-superior');
+
+    //FIND ELEMENTS o tags
+
+    var busqueda = $("#caja").find('.resaltado');
+    //console.log(busqueda);
+
+    //PAREND
+    //encontrar un elemnto de forma de arbol 
+    var bsuqueda3 = $("#elemento3").parent().parent().find('.resaltado');
+    console.log(bsuqueda3);
+
  });
