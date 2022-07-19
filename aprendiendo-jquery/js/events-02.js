@@ -36,5 +36,35 @@ $(document).ready(function() {
                .css('color', 'yellow');
     });
 
+    //FOCUS Y BLUR
+    //acciones dentro y fuera dentro de un elemnto html
+    /*
+    var nombre = $("#nombre");
+
+    nombre.focus(function(){
+    $(this).css("border", "5px solid green");
+    });
+
+    nombre.blur(function(){
+        $(this).css("border", "5px solid blue");});
+        //sacar los valores de un input
+        $("#datos").text($(this).val()).show();
+        */
+
+    
+    var nombre =  $("#nombre");
+    var datos = $("#datos");
+    
+    nombre.on("focus", function () {
+        $(this).css("border", "2px solid green");
+    });
+    
+    nombre.on("blur", function () {
+        $(this).css("border", "1px solid #ccc");
+    
+        datos.text($(this).val()).show();
+    });
+        
+
     
  });
