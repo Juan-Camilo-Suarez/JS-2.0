@@ -64,7 +64,26 @@ $(document).ready(function() {
     
         datos.text($(this).val()).show();
     });
-        
 
+    //mousedown and mouseup
+    //precionar y levantar
+
+    datos.mousedown(function(){
+
+    $(this).css("border-color", "gray")
+    });
     
+    datos.mouseup(function(){
+
+        $(this).css("border-color", "black")
+        });
+
+        //MOUSEMOVE
+        //captura el movimiento del mause
+       $(document).mousemove(function(){
+           console.log("en x " + event.clientX)
+           console.log(" en y "  + event.clientY)
+           $("#sigueme").css("left", event.clientX)
+           $("#sigueme").css("top", event.clientY)
+       })     
  });
