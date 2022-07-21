@@ -25,6 +25,13 @@ $(document).ready(function() {
     //todo en un solo boton
     $('#todoenuno').click(function() {
         $('#cajita').toggle('fast');
-        
+
+    });
+
+    //ANIMACIONES PERSONALIZADAS
+    $("#animame").click(function() {
+        $('#cajita').
+        animate({marginLeft: '500px',
+                fontSize: '30px'}, 'slow')
     });
 });
