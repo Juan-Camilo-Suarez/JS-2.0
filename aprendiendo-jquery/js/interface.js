@@ -7,5 +7,16 @@ $(document).ready(function() {
     $(".elemento").resizable();
 
     //seleccionar elemntos
-    $(".lista-seleccionable").selectable();
+
+    //SI USO selectable no puedo usar sortable
+    //$(".lista-seleccionable").selectable();
+
+    //ordenar element
+    $(".lista-seleccionable").sortable(
+        {
+            update:function(event, ul) {
+                console.log('ha cambiado la lista');
+            },
+        }
+    );
 });
