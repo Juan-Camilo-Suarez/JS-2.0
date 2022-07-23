@@ -52,4 +52,7 @@ $(document).ready(function() {
     
     $('#popup').dialog();
     });
+
+    //DATEPICKER
+    $('#calendario').datepicker();
 });
