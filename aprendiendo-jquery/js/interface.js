@@ -36,4 +36,11 @@ $(document).ready(function() {
         //$(".caja-efectos").toggle("blind")
         $(".caja-efectos").toggle("scale")
     });
+
+    //TOOLTIP
+    /*
+    los tooltip sirven para mostar un mensaje cada vez
+        que paso por encima algun elemento de html 
+    */
+    $(document).tooltip();
 });
