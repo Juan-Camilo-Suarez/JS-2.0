@@ -19,4 +19,14 @@ $(document).ready(function() {
             },
         }
     );
+
+    //drop
+    $('#elemento-movido').draggable();
+    $('#area').droppable(
+        {
+            drop : function(){
+                console.log('has solado algo dentro del area');
+            },
+        }
+    );
 });
