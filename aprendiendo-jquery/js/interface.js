@@ -29,4 +29,11 @@ $(document).ready(function() {
             },
         }
     );
+
+    //efectos
+    $("#mostrar").click(function(){
+        //$(".caja-efectos").toggle("explode")
+        //$(".caja-efectos").toggle("blind")
+        $(".caja-efectos").toggle("scale")
+    });
 });
