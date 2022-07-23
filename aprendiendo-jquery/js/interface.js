@@ -55,4 +55,8 @@ $(document).ready(function() {
 
     //DATEPICKER
     $('#calendario').datepicker();
+
+
+    //tabs
+    $('#pestanas').tabs();
 });
