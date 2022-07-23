@@ -43,4 +43,13 @@ $(document).ready(function() {
         que paso por encima algun elemento de html 
     */
     $(document).tooltip();
+
+    //DIALOG
+    /*
+    para hacer cuadros de dialogo
+    */
+    $("#lanzar-popup").click(function(){
+    
+    $('#popup').dialog();
+    });
 });
