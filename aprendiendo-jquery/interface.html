@@ -22,10 +22,32 @@
              float: left;
 
          }
+         .lista-seleccionable li{
+             width: 80px;
+             padding: 20px;
+             border: 1px solid #ccc;
+             list-style: none;
+             cursor: pointer;
+         }
+
+         ul .ui-selecting{
+             background: green;
+         }
+         
+         ul .ui-selected{
+             background: red;
+         }
      </style>  
     <title>interfaces jquery-ui</title>
 </head>
 <body>
+    <ul class="lista-seleccionable">
+        <li>gta5</li>
+        <li>need for speed</li>
+        <li>crash</li>
+        <li>supermario</li>
+        <li>fifa</li>
+    </ul>
     <div class="elemento">
         soy un elemento 1
     </div>
