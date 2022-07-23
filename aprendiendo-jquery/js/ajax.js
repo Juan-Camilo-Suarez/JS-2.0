@@ -44,14 +44,44 @@ $(document).ready(function() {
     
         };
         console.log(usuario);
+        /*
         $.post($(this).attr("action"), usuario, function(response) {
             console.log(response);
     
         }).done(function(){
             alert("usuario corecto");
         });
+        */
+
+        
+
+        // $.AJAX = permite manipular cualquier peticion
+        $.ajax({
+            type : 'POST',
+            dataType: 'json',
+            url: $(this).attr("action"),
+            //es la informacion que voy a enviar
+            
+            data: usuario,
+            
+            //hacer una funcion antes de enviar el usuario
+            beforesend: function() {
+                console.log("enviando usuario");
+            },
+            success: function(response) {
+                console.log(response);
+            },
+            error: function() {
+                console.log("Error");
+            },
+            timeout: 2000,
+            
+
+
+        });
 
         return false;
     });
+
     
 });
