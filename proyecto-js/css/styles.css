@@ -113,3 +113,52 @@ body{
     
 
 }
+
+#slidebar{
+    font-family: Arial, Helvetica;
+    width: 31%;
+    float: right;
+
+}
+
+#slidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px ;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../img/lines.png") repeat-x;
+}
+
+#slidebar h4 span{
+    background: white ;
+    padding: 5px;
+}
+
+#slidebar img{
+    width: 90%;
+}
+
+#slidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px gray;
+    margin-top: 5px;
+}
+form input[type="submit"]{
+    background: #ccc;
+    padding: 5px;
+    border: 1px solid gray;
+    color: #333;
+    cursor: pointer;
+}
