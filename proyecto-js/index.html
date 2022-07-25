@@ -5,7 +5,14 @@
     <title>Proyecto con JavaScript</title>
     <!--styles-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!--script-->
+
+    <!--slider-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- my script-->
+        <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <section id="global">
@@ -26,7 +33,11 @@
       </header>
       <!-- Slider   -->
       <div id="slider">
-
+        <div class="bxslider">
+          <div><img src="img/hojas.jpg" title="hojas"></div>
+          <div><img src="img/rojo.jpg" title="rojo"></div>
+          <div><img src="img/cielo.jpg" title="cielo"></div>
+        </div>
       </div>
       <!-- contenido -->
       <section id="content">
@@ -79,4 +90,4 @@
       curso de Js
     </footer>
   </body>
-</html>
+</html>   
