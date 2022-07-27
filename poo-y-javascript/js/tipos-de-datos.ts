@@ -24,4 +24,9 @@ var years: number[] = [2009,485,43];
 
 let cadena2 : string|number = "cadena2";
 
+// dipos personalizados
+type alfanumerico = string | number;
+
+let cadena3 : alfanumerico = "cadena3";
+
 console.log(cadena, numero, verdadero_falso, cualqueira, leguages, years);
