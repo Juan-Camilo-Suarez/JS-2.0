@@ -1,0 +1,17 @@
+#logo{
+    background: #235E30;
+    
+}
+#menu ul li:hover{
+    background: #235E30;
+}
+.button-more{
+    background: #235E30;
+
+}
+body{
+    /* cargar imagenes en css */
+    background: url("../img/hojas.jpg");
+    background-attachment: fixed ;
+    
+}
