@@ -1,15 +1,22 @@
 $(document).ready(function() {
 
     //slider
-
-    $('.bxslider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 1200
-      });
+    
+    //cargar el js donde es necessario
+    if(window.location.href.indexOf('index') > -1){
+	  
+        $('.bxslider').bxSlider({
+          mode: 'fade',
+          captions: false,
+          slideWidth: 1200,
+          responsive: true,
+          pager: true
+        });
+  
+      }
 
       //post
-
+      if(window.location.href.indexOf('index') > -1){
       var posts = [
           {
               title: "prueba de titulo 1",
@@ -49,6 +56,7 @@ $(document).ready(function() {
           $("#posts").append(post);
         
       });
+    }
 
       //selector de tema
       var theme = $('#theme');
@@ -99,6 +107,10 @@ $(document).ready(function() {
             window. location.reload();
         });
     
+
+      }
+      if(window.location.href.indexOf('about') > -1){
+        $("#acordeon").accordion();
 
       }
 
