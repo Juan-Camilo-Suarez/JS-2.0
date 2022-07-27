@@ -20,4 +20,8 @@ var leguages : Array<string> = ['java', 'ts'] ;
 
 var years: number[] = [2009,485,43];
 
+//multiples valores
+
+let cadena2 : string|number = "cadena2";
+
 console.log(cadena, numero, verdadero_falso, cualqueira, leguages, years);
