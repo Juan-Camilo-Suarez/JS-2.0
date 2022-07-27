@@ -190,6 +190,7 @@ footer {
     margin: 0% auto;
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 #to-green{
@@ -201,4 +202,11 @@ footer {
 }
 #to-red{
     background: #CA3413;
+}
+
+.subir{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    float: right;
 }
