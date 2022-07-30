@@ -1,4 +1,5 @@
-function getNumber(numero) {
-    if (numero === void 0) { numero = 12; }
-    return "el numero " + numero;
+/*
+function getNumber(numero:number = 12):string{
+    return"el numero " + numero
 }
+*/
