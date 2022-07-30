@@ -3,7 +3,18 @@ interface CamisetaBase{
     setColor(color);
     getColor();
 }
+
+// Decorador 
+function estampar(logo:string){
+    return function(target: Function){
+        target.prototype.estampacion =function():void{
+            console.log("camiseta estampada con el logo de : " + logo );
+        };
+    }
+
+}
 //asi se hace un export 
+@estampar("gucci gang")
 class Camiseta implements CamisetaBase{
 
     //atributos
@@ -42,7 +53,8 @@ class Sudadera  extends Camiseta{
         return this.capucha;
     }
 };
-var camiseta = new Camiseta("rojo", "camiseta larga", "L", 14);  
+var camiseta = new Camiseta("rojo", "camiseta larga", "L", 14);
+camiseta.estampacion();
 
 
 //set color
