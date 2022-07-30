@@ -1,6 +1,12 @@
 //CLASES 
+
+
+interface CamisetaBase{
+    setColor(color);
+    getColor();
+}
 //asi se hace un export 
-export class Camiseta{
+class Camiseta implements CamisetaBase{
 
     //atributos
     public color: string;
