@@ -1,6 +1,6 @@
 //CLASES 
-
-class Camiseta{
+//asi se hace un export 
+export class Camiseta{
 
     //atributos
     public color: string;

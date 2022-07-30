@@ -1,4 +1,8 @@
+"use strict";
+exports.__esModule = true;
+exports.Camiseta = void 0;
 //CLASES 
+//asi se hace un export 
 var Camiseta = /** @class */ (function () {
     //contructor
     function Camiseta(color, modelo, talla, precio) {
@@ -16,6 +20,7 @@ var Camiseta = /** @class */ (function () {
     };
     return Camiseta;
 }());
+exports.Camiseta = Camiseta;
 var camiseta = new Camiseta("rojo", "camiseta larga", "L", 14);
 //set color
 camiseta.setColor("verde");
