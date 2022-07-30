@@ -1,27 +1,25 @@
 //CLASES 
 var Camiseta = /** @class */ (function () {
-    function Camiseta() {
+    //contructor
+    function Camiseta(color, modelo, talla, precio) {
+        this.color = color;
+        this.modelo = modelo;
+        this.talla = talla;
+        this.precio = precio;
     }
     Camiseta.prototype.setColor = function (color) {
         this.color = color;
     };
+    //metodos
     Camiseta.prototype.getColor = function () {
         return this.color;
     };
     return Camiseta;
 }());
-var camiseta = new Camiseta();
-camiseta.color = "rojo";
-camiseta.modelo = "manga larga";
-camiseta.talla = "L";
-camiseta.precio = 100;
+var camiseta = new Camiseta("rojo", "camiseta larga", "L", 14);
 //set color
 camiseta.setColor("verde");
 camiseta.getColor();
-var palyera = new Camiseta();
-palyera.color = "azul";
-palyera.modelo = "manga larga";
-palyera.talla = "s";
-palyera.precio = 50;
+var palyera = new Camiseta("rojo", "camiseta larga", "L", 14);
 console.log(camiseta, palyera);
 console.log(camiseta.getColor());

@@ -1,6 +1,8 @@
 //CLASES 
 
 class Camiseta{
+
+    //atributos
     public color: string;
     public modelo: string;
     public talla: string;
@@ -9,31 +11,32 @@ class Camiseta{
     public setColor(color){
         this.color = color;
     }
+    //contructor
+    constructor(color, modelo, talla, precio){
+        this.color = color;
+        this.modelo =modelo;
+        this.talla = talla;
+        this.precio = precio;
+    }
 
+    //metodos
     public getColor(){
         return this.color;
     }
 
 }
 
-var camiseta = new Camiseta();  
+var camiseta = new Camiseta("rojo", "camiseta larga", "L", 14);  
 
-camiseta.color = "rojo";
-camiseta.modelo = "manga larga";
-camiseta.talla = "L"
-camiseta.precio = 100;
 
 //set color
 
 camiseta.setColor("verde");
 camiseta.getColor();
 
-var palyera = new Camiseta();  
+var palyera = new Camiseta("rojo", "camiseta larga", "L", 14);  
 
-palyera.color = "azul";
-palyera.modelo = "manga larga";
-palyera.talla = "s"
-palyera.precio = 50;
+
 
 console.log(camiseta, palyera);
 
